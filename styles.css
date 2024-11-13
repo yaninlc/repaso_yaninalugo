@@ -43,6 +43,29 @@ nav ul li a:hover {
     color: #ff66cc; /* Color rosado claro */
 }
 
+/* Botones animados */
+.botones {
+    margin-top: 20px;
+}
+
+.btn-animado {
+    padding: 15px 30px;
+    background-color: #D78EC9; /* Fucsia suave */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-animado:hover {
+    background-color: #ff66cc; /* Fucsia más claro */
+    transform: scale(1.1); /* Aumento de tamaño */
+}
+
 /* Botón Cambiante */
 button {
     padding: 15px 30px;
@@ -136,6 +159,69 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+footer #fecha {
+    font-weight: bold;
+}
+
+/* Estilo principal */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor de la lista de libros */
+.biblioteca {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la lista de libros */
+ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.libro {
+    font-size: 1.2rem;
+    color: #D78EC9; /* Fucsia suave */
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.libro:hover {
+    color: #ff66cc; /* Fucsia más claro */
+}
+
+/* Sinopsis de cada libro */
+.sinopsis {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sinopsis p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Cambio para que las imágenes tengan 200px de ancho */
+.sinopsis img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
 footer #fecha {
