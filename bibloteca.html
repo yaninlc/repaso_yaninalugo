@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mis Libros Favoritos</h1>
+        <ol>
+            <li class="libro" onclick="toggleLibro(this)">Título del libro 1</li>
+            <div class="sinopsis">
+                <p>Resumen del libro 1...</p>
+                <img src="portada1.jpg" alt="Portada Libro 1">
+            </div>
+
+            <li class="libro" onclick="toggleLibro(this)">Título del libro 2</li>
+            <div class="sinopsis">
+                <p>Resumen del libro 2...</p>
+                <img src="portada2.jpg" alt="Portada Libro 2">
+            </div>
+
+            <!-- Añadir más libros -->
+        </ol>
+    </main>
+
+    <footer>
+        <p>Mi Nombre | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        function toggleLibro(element) {
+            const sinopsis = element.nextElementSibling;
+            sinopsis.style.display = sinopsis.style.display === 'block' ? 'none' : 'block';
+        }
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

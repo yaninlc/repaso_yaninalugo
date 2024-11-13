@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mi Blog Personal</h1>
+
+        <!-- Artículo 1 -->
+        <section class="articulo">
+            <h2>Artículo 1</h2>
+            <img src="img-articulo1.jpg" alt="Encabezado Artículo 1">
+            <p>Descripción breve del artículo...</p>
+            <a href="https://ejemplo.com" class="btn">Leer más</a>
+        </section>
+
+        <!-- Artículo 2 -->
+        <section class="articulo">
+            <h2>Artículo 2</h2>
+            <img src="img-articulo2.jpg" alt="Encabezado Artículo 2">
+            <p>Descripción breve del artículo...</p>
+            <a href="https://ejemplo.com" class="btn">Leer más</a>
+        </section>
+
+        <!-- Artículo 3 -->
+        <section class="articulo">
+            <h2>Artículo 3</h2>
+            <img src="img-articulo3.jpg" alt="Encabezado Artículo 3">
+            <p>Descripción breve del artículo...</p>
+            <a href="https://ejemplo.com" class="btn">Leer más</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi Nombre | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mi Portafolio de Imágenes</h1>
+        <div class="galeria">
+            <div class="imagen" id="img1">
+                <img src="img1.jpg" alt="Proyecto 1">
+                <div class="descripcion">Proyecto 1: Descripción</div>
+            </div>
+            <!-- Añadir las otras imágenes de manera similar -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Mi Nombre | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

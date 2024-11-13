@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Mi Perfil</h1>
+            <p>Hola, soy [Tu Nombre], un apasionado de la tecnología y el diseño web.</p>
+        </section>
+
+        <section>
+            <h2>Mis Habilidades</h2>
+            <table>
+                <tr>
+                    <th>Habilidad</th>
+                    <th>Nivel</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <a href="https://twitter.com" class="icono red-social" title="Twitter">T</a>
+            <a href="https://linkedin.com" class="icono red-social" title="LinkedIn">L</a>
+            <a href="curriculo.pdf" class="button">Ver mi CV</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi Nombre | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>A continuación encontrarás enlaces a mis páginas personales, portafolio, blog y más.</p>
+
+        <!-- Botones animados -->
+        <div class="botones">
+            <button class="btn-animado">Perfil</button>
+            <button class="btn-animado">Portafolio</button>
+            <button class="btn-animado">Blog</button>
+            <button class="btn-animado">Proyectos</button>
+            <button class="btn-animado">Biblioteca</button>
+        </div>
+
+        <!-- Descripciones -->
+        <section id="perfil">
+            <h2>Perfil Personal</h2>
+            <p>Conoce más sobre mí, mis habilidades y cómo contactar conmigo.</p>
+        </section>
+
+        <section id="portafolio">
+            <h2>Portafolio de Imágenes</h2>
+            <p>Galería de mis trabajos más recientes.</p>
+        </section>
+
+        <section id="blog">
+            <h2>Blog Personal</h2>
+            <p>Lee mis artículos y pensamientos sobre diversos temas.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Interactivos</h2>
+            <p>Explora mis proyectos con tecnologías interactivas.</p>
+        </section>
+
+        <section id="biblioteca">
+            <h2>Biblioteca Personal</h2>
+            <p>Una lista de mis libros favoritos con resúmenes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi Nombre | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        // Fecha automática
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
