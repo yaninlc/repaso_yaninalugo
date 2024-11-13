@@ -1,9 +1,9 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #fcf8f8; /* Rosa muy suave */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,9 @@ body {
     min-height: 100vh;
 }
 
+/* Menú de Navegación */
 header {
-    background-color: #800080; /* Fucsia */
+    background-color: #D78EC9; /* Fucsia suave */
     padding: 15px 0;
     width: 100%;
 }
@@ -34,23 +35,107 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff66cc; /* Color rosado claro */
+}
+
+/* Botón Cambiante */
+button {
+    padding: 15px 30px;
+    background-color: #D78EC9; /* Fucsia suave */
+    color: white;
+    border: none;
+    cursor: pointer;
     font-size: 1.1rem;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Gradual cambio de tamaño y color */
+}
+
+button:active {
+    background-color: #ff66cc; /* Fucsia más claro */
+    transform: scale(1.2); /* Aumento de tamaño */
+}
+
+/* Animación de Ciclo de Colores */
+.ciclo-colores {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    animation: cicloColor 5s infinite; /* 5 segundos por ciclo */
+}
+
+@keyframes cicloColor {
+    0% {
+        background-color: #ff66cc; /* Rosa */
+    }
+    50% {
+        background-color: #D78EC9; /* Fucsia suave */
+    }
+    100% {
+        background-color: #fcf8f8; /* Rosa suave */
+    }
+}
+
+/* Texto Rotativo */
+.rotar {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #D78EC9; /* Fucsia suave */
+    animation: rotarTexto 10s linear infinite;
+}
+
+@keyframes rotarTexto {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Cambio de Tamaño con Hover */
+.cuadro-hover {
+    width: 200px;
+    height: 200px;
+    background-color: #ffe6f2; /* Rosa claro */
+    margin: 30px auto;
+    transition: all 0.3s ease; /* Cambiar el tamaño */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.cuadro-hover:hover {
+    transform: scale(1.2); /* Aumento de tamaño */
+}
+
+/* Velocidad de Animación Variable */
+.texto-animado {
+    font-size: 1.5rem;
+    color: #D78EC9; /* Fucsia suave */
+    animation: moverTexto 3s linear infinite; /* Animación más rápida */
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* Pie de página */
 footer {
-    background-color: #800080; /* Fucsia */
+    background-color: #D78EC9; /* Fucsia suave */
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
 }
 
 footer #fecha {
@@ -65,15 +150,6 @@ main {
     text-align: center;
 }
 
-/* Título */
-h1, h2 {
-    color: #800080; /* Fucsia */
-}
-
-h1 {
-    font-size: 2rem;
-}
-
 /* Contenedor principal */
 .container {
     max-width: 800px;
@@ -83,16 +159,9 @@ h1 {
     text-align: center;
 }
 
-/* Título principal */
-h1 {
-    color: #800080; /* Fucsia */
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
 /* Contenedor de la lista de libros */
 .biblioteca {
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -108,7 +177,7 @@ ol {
 
 .libro {
     font-size: 1.2rem;
-    color: #800080;
+    color: #D78EC9; /* Fucsia suave */
     cursor: pointer;
     margin-bottom: 15px;
     transition: color 0.3s ease;
@@ -139,19 +208,4 @@ ol {
     height: auto;
     border-radius: 8px;
     margin-top: 15px;
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: #800080; /* Fucsia */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-footer #fecha {
-    font-weight: bold;
 }
