@@ -347,3 +347,83 @@ ol {
     background-color: #ff66cc; /* Fucsia más claro */
     transform: scale(1.1); /* Aumento de tamaño */
 }
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Perfil */
+.perfil h1 {
+    font-size: 2.5rem;
+    color: #D78EC9; /* Fucsia suave */
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Tabla de Habilidades */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #D78EC9; /* Fucsia suave */
+    color: white;
+}
+
+td {
+    background-color: #ffe6f2; /* Rosa claro */
+}
+
+/* Habilidades */
+.habilidades h2 {
+    font-size: 2rem;
+    color: #D78EC9; /* Fucsia suave */
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto h2 {
+    font-size: 2rem;
+    color: #D78EC9;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icono {
+    font-size: 2rem;
+    color: #D78EC9;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #D78EC9;
+    transition: all 0.3s ease;
+}
+
+.icono:hover {
+    background-color: #D78EC9;
+    color: white;
+    transform: scale(1.2);
+}
